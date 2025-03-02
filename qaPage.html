@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Q & A</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="poppins bg-blue-100 py-10">
+    <nav>
+        <div class="navbar bg-base-100 shadow-sm rounded-xl mx-auto pt-3 w-30/40 mt-3">
+            <div class="flex flex-1 gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="flex items-center text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex gap-5">                
+                <button id="go-back" class=" bg-blue-500 text-white px-4 py-4 rounded-lg items-center">Back to Desk</button>
+            </div>
+        </div>
+        <h1 class="text-center font-extrabold text-3xl m-5">Blogs</h1>
+        <div class=" bg-base-100 shadow-sm rounded-xl mx-auto p-5 w-30/40 mt-3 space-y-5">
+            <h1 class=" font-semibold text-xl">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <p class=" text-xl">
+                We can select elements in the DOM in five ways. Those are: 1. "getElementById()", 2. "getElementsByClassName()", <br> 3. "getElementsByTagName()", 4. "querySelector()",  5. "querySelectorAll()"
+            </p>
+        </div>
+        <div class=" bg-base-100 shadow-sm rounded-xl mx-auto p-5 w-30/40 mt-3 space-y-5">
+            <h1 class=" font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <p class=" text-xl">
+                <span class="font-semibold">innerHTML :</span> By using this we can get the inner HTML or set and HTML structure. <br>
+                <span class="font-semibold">innerText :</span> By using this we can get the inner text or set/change the text inside an element. <br>
+                <span class="font-semibold">textContent :</span> By using it we can get/set all text, including hidden elements.
+            </p>
+        </div>
+        <div class=" bg-base-100 shadow-sm rounded-xl mx-auto p-5 w-30/40 mt-3 space-y-5">
+            <h1 class=" font-semibold text-xl">Question-3 :What is event delegation in the DOM?</h1>
+            <p class=" text-xl">
+                It is a technique in js which allow us to attach a single event listener to a parent element to handle events on its child elements.
+            </p>
+        </div>
+        <div class=" bg-base-100 shadow-sm rounded-xl mx-auto p-5 w-30/40 mt-3 space-y-5">
+            <h1 class=" font-semibold text-xl">Question-4: What is event bubbling in the DOM?</h1>
+            <p class=" text-xl">
+                This is event which goes upwards and grabs the innermost elements and then its parents.
+            </p>
+        </div>
+        <div class=" bg-base-100 shadow-sm rounded-xl mx-auto p-5 w-30/40 mt-3 space-y-5">
+            <h1 class=" font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class=" text-xl">
+            <span class="font-semibold">Creating an Element :</span> We will use "document.createElement()" to create a new element. <br>
+            <span class="font-semibold">Adding an Element :</span> We will use "appendChild()" to add an element to the last child of the parent element. <br>
+            <span class="font-semibold">Remove an Element :</span> We will use "remove()" to remove an element.
+            </p>
+        </div>
+        
+    </nav>
+    
+    <script src="js/task.js"></script>
+    <script src="js/qa.js"></script>
+</body>
+</html>

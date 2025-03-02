@@ -239,3 +239,10 @@ document.getElementById('color-change').addEventListener('click', function () {
     const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"];
     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 })
+
+document.getElementById('new-page').addEventListener('click', function(){
+    window.location.href="./qaPage.html";
+})
+
+
+
