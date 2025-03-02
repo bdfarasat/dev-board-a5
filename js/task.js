@@ -1,4 +1,4 @@
-const dateFormat = { weekday: 'short', month: 'short', day: 'numeric', year:       'numeric' };
+const dateFormat = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
 const currentDate = new Date().toLocaleDateString('en-US', dateFormat);
 document.getElementById('current-date').innerText = currentDate;
 
@@ -233,4 +233,9 @@ document.getElementById('task-6-btn').addEventListener('click', function () {
 
 document.getElementById('activity-log-btn').addEventListener('click', function () {
     document.getElementById('activity-log').innerHTML = '';
+})
+
+document.getElementById('color-change').addEventListener('click', function () {
+    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"];
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 })
